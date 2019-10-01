@@ -1,0 +1,267 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F68FAE35-30D7-48DC-868E-221CCC57DF49}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WA</RootNamespace>
+    <AssemblyName>WA</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\Agenda.mdf" />
+    <Content Include="App_Data\Agenda_log.ldf">
+      <DependentUpon>Agenda.mdf</DependentUpon>
+    </Content>
+    <Content Include="Exemplo.aspx" />
+    <Content Include="Imagens\18.jpg" />
+    <Content Include="Imagens\autocolantes-bee-hornet-cartoon-image.jpg.jpg" />
+    <Content Include="Imagens\download.jpg" />
+    <Content Include="Web.config" />
+    <Content Include="WF.aspx" />
+    <Content Include="WfComponentes1.aspx" />
+    <Content Include="WFCursos.aspx" />
+    <Content Include="WFData.aspx" />
+    <Content Include="WFDiasDeVida.aspx" />
+    <Content Include="WFGridview.aspx" />
+    <Content Include="WFJavacript.aspx" />
+    <Content Include="WFLinksParaWebForms.aspx" />
+    <Content Include="WFList.aspx" />
+    <Content Include="WFMenu.aspx" />
+    <Content Include="WFParOuImparFatorial.aspx" />
+    <Content Include="WfSitesParceiros.aspx" />
+    <Content Include="WFValidator.aspx" />
+    <Content Include="WFWizard.aspx" />
+    <Content Include="WUCwebmenu.ascx" />
+    <Content Include="XMLFile1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Exemplo.aspx.cs">
+      <DependentUpon>Exemplo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Exemplo.aspx.designer.cs">
+      <DependentUpon>Exemplo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo.Master.cs">
+      <DependentUpon>Modelo.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modelo.Master.designer.cs">
+      <DependentUpon>Modelo.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WF.aspx.cs">
+      <DependentUpon>WF.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WF.aspx.designer.cs">
+      <DependentUpon>WF.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WfComponentes1.aspx.cs">
+      <DependentUpon>WfComponentes1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WfComponentes1.aspx.designer.cs">
+      <DependentUpon>WfComponentes1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WFCursos.aspx.cs">
+      <DependentUpon>WFCursos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WFCursos.aspx.designer.cs">
+      <DependentUpon>WFCursos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WFData.aspx.cs">
+      <DependentUpon>WFData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WFData.aspx.designer.cs">
+      <DependentUpon>WFData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WFDiasDeVida.aspx.cs">
+      <DependentUpon>WFDiasDeVida.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WFDiasDeVida.aspx.designer.cs">
+      <DependentUpon>WFDiasDeVida.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WFGridview.aspx.cs">
+      <DependentUpon>WFGridview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WFGridview.aspx.designer.cs">
+      <DependentUpon>WFGridview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WFJavacript.aspx.cs">
+      <DependentUpon>WFJavacript.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WFJavacript.aspx.designer.cs">
+      <DependentUpon>WFJavacript.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WFLinksParaWebForms.aspx.cs">
+      <DependentUpon>WFLinksParaWebForms.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WFLinksParaWebForms.aspx.designer.cs">
+      <DependentUpon>WFLinksParaWebForms.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WFList.aspx.cs">
+      <DependentUpon>WFList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WFList.aspx.designer.cs">
+      <DependentUpon>WFList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WFMenu.aspx.cs">
+      <DependentUpon>WFMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WFMenu.aspx.designer.cs">
+      <DependentUpon>WFMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WFParOuImparFatorial.aspx.cs">
+      <DependentUpon>WFParOuImparFatorial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WFParOuImparFatorial.aspx.designer.cs">
+      <DependentUpon>WFParOuImparFatorial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WfSitesParceiros.aspx.cs">
+      <DependentUpon>WfSitesParceiros.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WfSitesParceiros.aspx.designer.cs">
+      <DependentUpon>WfSitesParceiros.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WFValidator.aspx.cs">
+      <DependentUpon>WFValidator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WFValidator.aspx.designer.cs">
+      <DependentUpon>WFValidator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WFWizard.aspx.cs">
+      <DependentUpon>WFWizard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WFWizard.aspx.designer.cs">
+      <DependentUpon>WFWizard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WUCwebmenu.ascx.cs">
+      <DependentUpon>WUCwebmenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WUCwebmenu.ascx.designer.cs">
+      <DependentUpon>WUCwebmenu.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Modelo.Master" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="Web.sitemap" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52737</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:52737/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este projeto faz referência a pacotes do NuGet que não estão presentes neste computador. Use a Restauração de Pacotes do NuGet para baixá-los.  Para obter mais informações, consulte http://go.microsoft.com/fwlink/?LinkID=322105. O arquivo ausente é {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+  <Ad>
+    <ImageUrl>~/imagens/download.jpg</ImageUrl>
+    <NavigateUrl>http://www.google.com.br</NavigateUrl>
+    <AlternateText>
+      Order flowers, roses, gifts and more
+    </AlternateText>
+    <Impressions>20</Impressions>
+    <Keyword>flowers</Keyword>
+  </Ad>
+
+  <Ad>
+    <ImageUrl>~/imagens/autocolantes-bee-hornet-cartoon-image.jpg.jpg</ImageUrl>
+    <NavigateUrl>http://www.outlook.com.br</NavigateUrl>
+    <AlternateText>Order roses and flowers</AlternateText>
+    <Impressions>20</Impressions>
+    <Keyword>gifts</Keyword>
+  </Ad>
+
+  
+</Advertisements>

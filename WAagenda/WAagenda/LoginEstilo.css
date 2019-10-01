@@ -1,0 +1,14 @@
+﻿#centralizar {
+    border: solid #ff6a00 5px;
+    height: 150px;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 250px;
+}
+#Conteudocentralizar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

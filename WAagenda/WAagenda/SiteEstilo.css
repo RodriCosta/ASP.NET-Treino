@@ -1,0 +1,32 @@
+﻿body {
+}
+
+header{
+
+    margin:0 auto;
+    width:80%;
+    height70px;
+    background-color:#ff6a00;
+    padding:10px;
+
+ }
+
+nav{
+
+    float:right;
+}
+
+main {
+    margin: 0 auto;
+    width: 80%;
+    background-color: bisque;
+    padding: 10px;
+}
+footer{
+
+    margin:0 auto;
+    width:80%;
+    height: 40px;
+    background-color:bisque;
+    padding: 10px;
+}
